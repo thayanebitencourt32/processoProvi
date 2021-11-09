@@ -27,7 +27,7 @@ const SignupForm = () => {
     if (form.password !== form.confirmPassword) {
       Toast.fire({
         icon: 'error',
-        title: 'As senhas estão diferentes',
+        title: 'As senhas não conferem',
       })
     } else {
       form.cpf = modulatedCPF()
@@ -48,7 +48,7 @@ const SignupForm = () => {
           required
           fullWidth
           margin={"normal"}
-          placeholder={"Nome e sobrenome"}
+          placeholder={"Nome completo"}
           InputLabelProps={{
             shrink: true,
           }}
@@ -63,7 +63,7 @@ const SignupForm = () => {
           required
           fullWidth
           margin={"normal"}
-          placeholder={"email@email.com"}
+          placeholder={"e-mail@email.com"}
           InputLabelProps={{
             shrink: true,
           }}
@@ -101,7 +101,7 @@ const SignupForm = () => {
             shrink: true,
           }}
           inputProps={{ pattern: "^.{6,}$" }}
-          title={"A senha deve ter no mínimo 6 caracteres"}
+          title={"A senha deve conter no mínimo 6 caracteres"}
           placeholder={"Mínimo 6 caracteres"}
           required
         />
@@ -115,7 +115,7 @@ const SignupForm = () => {
           variant={"outlined"}
           fullWidth
           margin={"normal"}
-          placeholder={"Confirme a senha anterior"}
+          placeholder={"Confirme a senha"}
           InputLabelProps={{
             shrink: true,
           }}

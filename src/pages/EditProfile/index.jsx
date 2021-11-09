@@ -8,7 +8,7 @@ const EditProfile = () => {
   useProtectedPage()
   return (
     <div>
-      <Header backButton title="Editar Perfil" />
+      <Header backButton title="Editar" />
       <S.EditProfileInnerContainer>
         <EditProfileForm />
       </S.EditProfileInnerContainer>

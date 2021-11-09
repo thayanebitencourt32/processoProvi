@@ -9,7 +9,7 @@ const OrderInProgressCard = ({ data }) => (
         alt='Relógio'
       />
       <div>
-        <p>O seu pedido esta sendo preparado</p>
+        <p>Pedido em andamento</p>
         <p>{data.restaurantName}</p>
         <p>
           <strong>

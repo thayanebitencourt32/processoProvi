@@ -1,6 +1,6 @@
 import React from 'react'
 import SignupForm from './SignupForm'
-import logo from '../../assets/logo.png'
+import logo from '../../assets/logo.svg'
 import * as S from './styles'
 import Header from '../../components/Header'
 import useUnprotectedPage from '../../hooks/useUnProtectedPage'
@@ -11,12 +11,12 @@ const Signup = () => {
     <>
     <Header backButton/>
     <S.SignupMainContainer>
-      <img src={logo} alt={"Logo da HappyFour"}/>
-      <h1>Cadastre-se</h1>
+      <img src={logo} alt={"Logo da Rappi4"}/>
+      <h1>Cadastrar</h1>
       <SignupForm />
     </S.SignupMainContainer>
     </>
   )
 }
 
-export default Signup;
+export default Signup

@@ -57,13 +57,13 @@ const Cart = () => {
     } else if (cart.products.length == 0 && cart.paymentMethod !== '') {
       Toast.fire({
         icon: 'error',
-        title: 'Adicionar ao carrinho.',
+        title: 'Adicionar item ao carrinho.',
       })
     } else {
       Toast.fire({
         icon: 'error',
         title:
-          'Adicione o(s) item(ns) ao carrinho, escolha opção de pagamento para prosseguir.',
+          'Adicione item ao carrinho e selecione opção de pagamento, para prosseguir.',
       })
     }
   }
@@ -109,7 +109,7 @@ const Cart = () => {
           <>
             <S.UserAdress>
               <div>
-                <p>Endereço de entrega</p>
+                <p>Endereço da entrega</p>
                 <p>{profile.address}</p>
               </div>
             </S.UserAdress>
@@ -150,7 +150,7 @@ const Cart = () => {
                   ) : (
                     <>
                       <span>SUBTOTAL</span>
-                      <span>R$00,00</span>
+                      <span>R$0,00</span>
                     </>
                   )}
                 </S.Price>
@@ -164,7 +164,7 @@ const Cart = () => {
                   ) : (
                     <>
                       <span>FRETE</span>
-                      <span>R$00,00</span>
+                      <span>R$0,00</span>
                     </>
                   )}
                 </S.Price>
@@ -183,7 +183,7 @@ const Cart = () => {
                   ) : (
                     <>
                       <span>TOTAL</span>
-                      <span>R$00,00</span>
+                      <span>R$0,00</span>
                     </>
                   )}
                 </S.Price>

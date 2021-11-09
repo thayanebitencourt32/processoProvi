@@ -42,7 +42,7 @@ const Router = () => {
         <EditAddress />
       </Route>
       <Route>
-        <div>Erro - A página não foi encontrada</div>
+        <div>Erro - Página não encontrada</div>
       </Route>
     </Switch>
   );

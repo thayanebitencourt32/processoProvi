@@ -55,7 +55,7 @@ const Profile = () => {
         </S.OrderHistoryCard>
       ))
     ) : (
-      <p style={{ textAlign: 'center' }}>Você ainda não fez o pedido</p>
+      <p style={{ textAlign: 'center' }}>Você não realizou nenhum pedido</p>
     );
 
   React.useEffect(() => {
@@ -86,7 +86,7 @@ const Profile = () => {
           <p>{profile.address}</p>
         </section>
         <S.UserOrderHistory>
-          <p>Seu histório</p>
+          <p>Seu histórico</p>
           <hr />
           {showOrders}
         </S.UserOrderHistory>

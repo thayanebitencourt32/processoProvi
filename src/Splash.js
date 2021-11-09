@@ -1,6 +1,6 @@
-import React from "react";
-import App from "../../App";
-import logoSplash from "../../assets/logoSplash.svg";
+import React, { useState, useEffect } from "react";
+import App from "./App";
+import logoSplash from "./assets/logoSplash.svg";
 import styled from "styled-components";
 
 const Override = styled.div`
@@ -15,9 +15,9 @@ const Override = styled.div`
 `;
 
 const Splash = () => {
-  const [isLoading, setIsLoading] = React.useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
-  React.useEffect(() => {
+  useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
     }, 1000);

@@ -10,7 +10,7 @@ const SignupAddress = () => {
     <>
       <Header backButton />
       <S.SignupAddressContainer>
-        <h2>Meu endereço</h2>
+        <h2>Seu endereço</h2>
         <AddressForm />
       </S.SignupAddressContainer>
     </>

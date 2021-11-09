@@ -54,7 +54,7 @@ const EditProfileForm = () => {
           required
           fullWidth
           margin={"normal"}
-          placeholder={"Nome completo"}
+          placeholder={"Nome e sobrenome"}
           InputLabelProps={{
             shrink: true,
           }}
@@ -96,7 +96,7 @@ const EditProfileForm = () => {
           color="primary"
           fullWidth
         >
-          {isLoading ? <CircularProgress color={"inherit"} size={22} /> : <>Salvar</>}
+          {isLoading ? <CircularProgress color={"inherit"} size={24} /> : <>Salvar</>}
         </Button>
       </form>
     </S.EditProfileForm>

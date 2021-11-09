@@ -1,6 +1,6 @@
 {
-  "name": "labefood",
-  "version": "0.1.0",
+  "name": "rappi4",
+  "version": "1.1.0",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.12.3",
@@ -39,5 +39,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "PROJETO LABEFOOD",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thayanebitencourt32/processoProvi.git"
+  },
+  "author": "srabitencourt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thayanebitencourt32/processoProvi/issues"
+  },
+  "homepage": "https://github.com/thayanebitencourt32/processoProvi#readme"
 }

@@ -35,7 +35,7 @@ const Home = () => {
   const goTo = useCoordinator()
 
   const filteredRestaurants = (category) => {
-    return restaurants?.filter((restaurant) => restaurant.category == category)
+    return restaurants?.filter((restaurant) => restaurant.category === category)
   }
 
 
@@ -47,7 +47,7 @@ const Home = () => {
 
   return (
     <S.Home>
-      <Header backButton title={'HappyFood'} />
+      <Header backButton title={'Rappi4'} />
       <main>
         {orderInProgress && Object.keys(orderInProgress).length > 0 && (
           <OrderInProgressCard data={orderInProgress} />
@@ -83,7 +83,7 @@ const Home = () => {
               ))}
             </S.Carousel>
 
-            {restaurantCategoryFilter == 'Todos' &&
+            {restaurantCategoryFilter === 'Todos' &&
               RestaurantsSearch?.map((restaurant) => (
                 <RestaurantCard
                   onClick={() => goTo.RestaurantDetail(restaurant.id)}
@@ -111,12 +111,12 @@ const Home = () => {
 
             {RestaurantsSearch?.length == 0 &&
               form?.search?.length > 0 &&
-              filteredRestaurants(restaurantCategoryFilter).length == 0 && (
-                <p>Desculpe, não foi encontrado </p>
+              filteredRestaurants(restaurantCategoryFilter).length === 0 && (
+                <p>Não encontramos </p>
               )}
 
             {restaurantCategoryFilter !== 'Todos' && form.search.length > 0 && (
-              <p>Faça busca por categoria.</p>
+              <p>Faça uma busca na categoria "Todos".</p>
             )}
           </>
         )}
